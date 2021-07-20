@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -p GPU-shared
+#SBATCH --gpus=v100:1
+#SBATCH -t 5
+#SBATCH -A tra210016p
+#    Should default for IHPCSS without this: SBATCH --reservation=workshopgpu
+
+./a.out
